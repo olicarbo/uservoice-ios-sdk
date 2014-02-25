@@ -87,7 +87,7 @@
     cell.textLabel.text = NSLocalizedStringFromTable(@"Post an idea", @"UserVoice", nil);
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     if (IOS7) {
-        cell.textLabel.textColor = cell.textLabel.tintColor;
+        cell.textLabel.textColor = [UVStyleSheet instance].tintColor;
     }
 }
 
