@@ -245,7 +245,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return tableView == _tableView ? 30 : 0;
+    return tableView == _tableView ? 0 : 0;
 }
 
 #pragma mark ===== UISearchBarDelegate Methods =====
