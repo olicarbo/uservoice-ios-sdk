@@ -285,6 +285,8 @@
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                                                                                target:self
                                                                                                action:@selector(composeButtonTapped)];
+        if ([self.navigationItem.rightBarButtonItem respondsToSelector:@selector(setTintColor:)])
+            self.navigationItem.rightBarButtonItem.tintColor = [UVStyleSheet instance].tintColor;
     }
 
     if ([UVSession currentSession].isModal && _firstController) {
